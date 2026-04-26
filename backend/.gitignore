@@ -1,0 +1,18 @@
+# Cached model file (downloaded at first run)
+model_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

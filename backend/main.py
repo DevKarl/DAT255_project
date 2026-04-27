@@ -26,9 +26,10 @@ async def root():
     return {"status": "ok", "service": "plant-disease-diagnoser"}
 
 
-@app.get("/ping")
+@app.api_route("/ping", methods=["GET", "HEAD"])
 async def ping():
-    """Health check endpoint to keep the container warm"""
+    """Health check endpoint to keep the container warm.
+    Accepts HEAD so free-tier uptime monitors (like UptimeRobot) work."""
     return JSONResponse(status_code=200, content={"status": "ok"})
 
 

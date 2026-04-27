@@ -31,7 +31,7 @@ async def root():
 
 @app.get("/ping")
 async def ping():
-    """Health check endpoint to keep the container warm on Railway free tier."""
+    """Health check endpoint to keep the container warm"""
     return JSONResponse(status_code=200, content={"status": "ok"})
 
 

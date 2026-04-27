@@ -10,15 +10,12 @@ from app.ml_service.diagnoser import Diagnoser
 app = FastAPI(title="Plant Disease Diagnoser")
 diagnoser = Diagnoser()
 
-origins = [
-    "http://localhost:5173",  # Vite dev server
-    "http://localhost:3000",  # Optional fallback
-]
-
+# Allow all origins for the public demo deployment.
+# allow_credentials must be False when allow_origins is ["*"] (CORS spec).
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

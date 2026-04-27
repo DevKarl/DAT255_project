@@ -29,6 +29,12 @@ async def root():
     return {"status": "ok", "service": "plant-disease-diagnoser"}
 
 
+@app.get("/ping")
+async def ping():
+    """Health check endpoint to keep the container warm on Railway free tier."""
+    return JSONResponse(status_code=200, content={"status": "ok"})
+
+
 @app.post("/diagnose")
 async def diagnose(file: UploadFile = File(...)):
     contents = await file.read()

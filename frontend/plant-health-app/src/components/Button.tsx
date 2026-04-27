@@ -6,7 +6,7 @@ interface ButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
-  variant?: "activateCamera" | "diagnose" | "red" | "default";
+  variant?: "activateCamera" | "diagnose" | "secondary" | "danger" | "default";
 }
 
 export default function Button({
@@ -31,10 +31,11 @@ export default function Button({
 
 // Variant color map
 const variantStyles: Record<string, { bg: string; hover?: string }> = {
-  activateCamera: { bg: "#6e8d73", hover: "#6d8773" },
-  diagnose: { bg: "#4caf50", hover: "#43a047" },
-  red: { bg: "#f44336", hover: "#e53935" },
-  default: { bg: "#2196f3", hover: "#1e88e5" },
+  activateCamera: { bg: "#2e7d32", hover: "#27632a" },
+  diagnose: { bg: "#388e3c", hover: "#2e7d32" },
+  secondary: { bg: "#546e7a", hover: "#455a64" },
+  danger: { bg: "#d32f2f", hover: "#c62828" },
+  default: { bg: "#0288d1", hover: "#0277bd" },
 };
 
 // Styled button

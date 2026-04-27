@@ -52,7 +52,7 @@ export default function ButtonActions({
           🔍 Diagnose
         </Button>
       )}
-      <Button onClick={resetPhoto} variant="red">
+      <Button onClick={resetPhoto} variant="secondary">
         🔄 New photo
       </Button>
     </ButtonGroup>
@@ -62,6 +62,7 @@ export default function ButtonActions({
 const ButtonGroup = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 0.75rem;
   margin-top: 1rem;
   align-items: center;

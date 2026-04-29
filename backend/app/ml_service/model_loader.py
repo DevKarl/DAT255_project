@@ -10,7 +10,7 @@ from keras.models import load_model
 
 
 # TODO before pushing to GitHub: update this URL after creating the release.
-MODEL_URL="https://github.com/DevKarl/DAT255_project/releases/download/v1.0/custom_cnn_best.keras"
+MODEL_URL="https://github.com/DevKarl/DAT255_project/releases/download/v2/custom_cnn_v2_best.keras"
 
 # Local cache path
 _CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "model_cache")

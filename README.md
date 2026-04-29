@@ -10,20 +10,20 @@ A deep learning system that classifies plant leaves as healthy or affected by a 
 
 ## Project structure
 
-DAT255_project/
-├── backend/ # FastAPI inference server (Python, Keras)
-│ ├── app/ml_service/
-│ │ ├── class_names.json # 38 class labels
-│ │ ├── diagnoser.py # high-level prediction wrapper
-│ │ ├── model_loader.py # downloads + caches the .keras model
-│ │ ├── predict.py # runs inference, returns top-1 class
-│ │ └── transforms.py # image preprocessing (resize, batch)
-│ ├── main.py # FastAPI app, CORS, /diagnose endpoint
-│ ├── requirements.txt
-│ ├── Procfile # Railway start command
-│ └── runtime.txt # Python version pin
-├── frontend/plant-health-app/ # Vite + React + TypeScript SPA
-├── notebook/ # Colab notebook used for training
+- **DAT255_project/**
+  - **backend/** — FastAPI inference server (Python, Keras)
+    - **app/ml_service/**
+      - `class_names.json` — 38 class labels
+      - `diagnoser.py` — high-level prediction wrapper
+      - `model_loader.py` — downloads + caches the .keras model
+      - `predict.py` — runs inference, returns top-1 class
+      - `transforms.py` — image preprocessing (resize, batch)
+    - `main.py` — FastAPI app, /diagnose endpoint
+    - `requirements.txt`
+    - `Procfile` — Railway start command
+    - `runtime.txt` — Python version pin
+  - **frontend/plant-health-app/** — React SPA
+  - **notebook/** — Colab notebook used for training
 
 ## Reproducing the training
 

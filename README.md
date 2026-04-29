@@ -35,7 +35,7 @@ Training was performed in Google Colab. To reproduce:
 4. Place `plant_dataset.zip` (the [Kaggle dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)) in `MyDrive/Colab Notebooks/`
 5. Run cells in order
 
-Total training time: ~46 minutes for the custom CNN, ~43 minutes for MobileNetV2 (Phase 1 + Phase 2).
+Total training time: 40min - 3 hours.
 
 ## Running the backend locally
 

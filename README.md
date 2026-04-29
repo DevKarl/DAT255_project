@@ -29,7 +29,7 @@ A deep learning system that classifies plant leaves as healthy or affected by a 
 
 Training was performed in Google Colab. To reproduce:
 
-1. Open `notebook/DAT255_project.ipynb` in Colab
+1. Open `notebook.ipynb` in Colab
 2. Set runtime to T4 GPU
 3. Mount Google Drive
 4. Place `plant_dataset.zip` (the [Kaggle dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)) in `MyDrive/Colab Notebooks/`
